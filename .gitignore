@@ -1,0 +1,16 @@
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Build / deps
+node_modules/
+target/
+dist/
+*.class
+
+# Données de soumission / exports (jamais ici)
+*Submissions*.csv
+*_debug.json
