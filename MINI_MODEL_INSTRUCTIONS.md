@@ -55,7 +55,7 @@ ou données Crédit Agricole réels. Le dataset fourni est fictif et suffisant.
 
 ### 0-5 — Lancer le starter
 ```bash
-cd clients/credit-agricole-ia-gen/formation-3j-socle-comundi/ateliers/01-panorama-modeles/exercice/starter
+cd /starter
 python mini_modele_ca_titres.py
 ```
 Le script s'arrête sur le premier `TODO`. C'est normal : vous allez le compléter.
