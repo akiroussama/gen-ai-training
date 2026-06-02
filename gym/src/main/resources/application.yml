@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: poc-titres
+  profiles:
+    default: dev
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    fr.formation.poc: DEBUG
+
+# Pour activer un profil :
+#   mvn spring-boot:run -Dspring-boot.run.profiles=prod
+#   ou
+#   java -jar poc-titres-0.1.0-SNAPSHOT.jar --spring.profiles.active=prod

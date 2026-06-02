@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                                  http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
+              version="2.3">
+
+    <application>
+        <locale-config>
+            <default-locale>fr_FR</default-locale>
+            <supported-locale>fr_FR</supported-locale>
+        </locale-config>
+    </application>
+
+    <!--
+      Pas de managed-bean ici : on utilise @ManagedBean côté Java
+      (DossierBean.java). Dette tech D32 documentée :
+      @ManagedBean est deprecated, migration vers CDI @Named à faire.
+    -->
+
+</faces-config>

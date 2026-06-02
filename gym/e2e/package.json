@@ -1,0 +1,14 @@
+{
+  "name": "poc-titres-e2e",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Tests e2e Playwright (équivalent déterministe de la migration Selenium).",
+  "scripts": {
+    "test": "playwright test",
+    "test:5x": "for i in 1 2 3 4 5; do playwright test || exit 1; done",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}

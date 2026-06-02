@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <title>Titres — Valeurs Mobilières (legacy JSF)</title>
+    <h:outputStylesheet name="css/legacy.css" />
+</h:head>
+
+<h:body>
+
+<p:panel header="Recherche d'ordres de bourse" toggleable="false">
+
+    <h:form id="formRecherche">
+
+        <p:panelGrid columns="2" layout="grid"
+                     columnClasses="ui-grid-col-3,ui-grid-col-9"
+                     styleClass="ui-panelgrid-blank">
+
+            <p:outputLabel for="codeClient" value="Code client" />
+            <p:inputText id="codeClient"
+                         value="#{dossierBean.codeClient}"
+                         placeholder="ex : CLI-0001" />
+
+            <p:outputLabel for="codeIsin" value="Code ISIN" />
+            <p:inputText id="codeIsin"
+                         value="#{dossierBean.codeIsin}"
+                         placeholder="ex : FR0000131104" />
+
+            <p:outputLabel for="sens" value="Sens" />
+            <p:selectOneMenu id="sens" value="#{dossierBean.sens}">
+                <f:selectItem itemLabel="Tous" itemValue="" />
+                <f:selectItem itemLabel="Achat" itemValue="ACHAT" />
+                <f:selectItem itemLabel="Vente" itemValue="VENTE" />
+            </p:selectOneMenu>
+
+        </p:panelGrid>
+
+        <p:commandButton value="Rechercher"
+                         action="#{dossierBean.rechercher}"
+                         update="tableDossiers totauxPanel"
+                         icon="pi pi-search" />
+    </h:form>
+
+</p:panel>
+
+<p:panel id="tableDossiers" header="Résultats" styleClass="mt-3">
+
+    <p:dataTable value="#{dossierBean.dossiers}" var="dossier"
+                 emptyMessage="Aucun ordre trouvé"
+                 paginator="true" rows="10">
+
+        <p:column headerText="Id">
+            <h:outputText value="#{dossier.id}" />
+        </p:column>
+
+        <p:column headerText="Client">
+            <h:outputText value="#{dossier.codeClient}" />
+        </p:column>
+
+        <p:column headerText="ISIN">
+            <h:outputText value="#{dossier.codeIsin}" />
+        </p:column>
+
+        <p:column headerText="Sens">
+            <h:outputText value="#{dossier.sens}" />
+        </p:column>
+
+        <p:column headerText="Quantité" style="text-align: right;">
+            <h:outputText value="#{dossier.quantite}" />
+        </p:column>
+
+        <p:column headerText="Cours" style="text-align: right;">
+            <h:outputText value="#{dossier.coursAffiche}" />
+        </p:column>
+
+        <p:column headerText="Frais estimés" style="text-align: right;">
+            <h:outputText value="#{dossier.fraisAffiche}" />
+        </p:column>
+
+    </p:dataTable>
+
+</p:panel>
+
+<p:panel id="totauxPanel" header="Totaux session" styleClass="mt-3">
+
+    <p:panelGrid columns="2" layout="grid">
+
+        <h:outputLabel value="Total frais estimés :" />
+        <h:outputText value="#{dossierBean.totalFraisFormate}" style="font-weight: bold;" />
+
+        <h:outputLabel value="Total agios estimés :" />
+        <h:outputText value="#{dossierBean.totalAgiosFormate}" style="font-weight: bold;" />
+
+        <h:outputLabel value="Recherche effectuée le :" />
+        <h:outputText value="#{dossierBean.dateRechercheFormatee}" />
+
+    </p:panelGrid>
+
+</p:panel>
+
+</h:body>
+</html>
