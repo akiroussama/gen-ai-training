@@ -1,0 +1,8 @@
+Le client veut transférer ses prélèvements après changement de banque.
+Un ordre limite sur titre coté reste bloqué avant exécution.
+Simulation des intérêts pour un DAT arrivant à échéance.
+Le bénéficiaire veut arbitrer son PEE vers un fonds prudent.
+Un créancier n'a pas reçu le mandat de mobilité bancaire.
+Le coupon d'une obligation n'apparaît pas dans le portefeuille titres.
+La participation annuelle est visible mais l'abondement manque.
+Le conseiller veut comparer deux dépôts à terme avant souscription.

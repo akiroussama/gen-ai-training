@@ -1,0 +1,123 @@
+﻿texte;filiere
+Ordre achat bloqué sur ISIN FR0000120271 avec cours limite non atteint;VALEURS_MOBILIERES
+Le client veut vendre une ligne de titres mais le carnet d ordres refuse la saisie;VALEURS_MOBILIERES
+Exécution partielle d un ordre de bourse sur valeur cotée europeenne;VALEURS_MOBILIERES
+Rejet ordre vente car quantité supérieure au solde du portefeuille titres;VALEURS_MOBILIERES
+Frais de courtage incohérents après achat action sur marche français;VALEURS_MOBILIERES
+Controle du prix limite avant transmission d un ordre au marche;VALEURS_MOBILIERES
+Le dividende attendu sur une action ne remonte pas dans le portefeuille;VALEURS_MOBILIERES
+Operation sur titre avec coupon non affecte au compte especes;VALEURS_MOBILIERES
+Ordre stop déclenché trop tot sur une valeur volatile;VALEURS_MOBILIERES
+Rapprochement règlement livraison absent après Exécution de l ordre;VALEURS_MOBILIERES
+Modification du sens achat vente impossible sur ordre déjà transmis;VALEURS_MOBILIERES
+Le code ISIN saisi est invalide dans l ecran d ordre de bourse;VALEURS_MOBILIERES
+Annulation impossible d un ordre en attente sur le carnet;VALEURS_MOBILIERES
+Controle MIF sur profil investisseur avant achat de titre complexe;VALEURS_MOBILIERES
+Valorisation portefeuille titres différente du dernier cours connu;VALEURS_MOBILIERES
+Ordre a cours limite expire avant Exécution complete;VALEURS_MOBILIERES
+Erreur de place de cotation sur achat action internationale;VALEURS_MOBILIERES
+OST de division nominale non refletee dans le nombre de titres;VALEURS_MOBILIERES
+Le portefeuille affiche un solde titres negatif après vente;VALEURS_MOBILIERES
+Demande de simulation frais avant passage ordre de bourse;VALEURS_MOBILIERES
+Controle du seuil de quantité minimale pour achat d obligation;VALEURS_MOBILIERES
+Le statut execute ne se met pas a jour après retour marche;VALEURS_MOBILIERES
+Ordre rejete par absence de compte especes associe;VALEURS_MOBILIERES
+Historique des transactions titres incomplet pour une valeur;VALEURS_MOBILIERES
+Alerte sur ecart entre prix moyen et prix Exécution;VALEURS_MOBILIERES
+Passage d ordre impossible sur instrument suspendu de cotation;VALEURS_MOBILIERES
+Le client conteste une Exécution au marche sans limite de prix;VALEURS_MOBILIERES
+Calcul de plus value incorrect après cession de titres;VALEURS_MOBILIERES
+Mise a jour du libelle valeur après changement de code ISIN;VALEURS_MOBILIERES
+Blocage de souscription a une obligation non eligible au profil;VALEURS_MOBILIERES
+Arbitrage PEE vers fonds monétaire demande par un Salarié;EPARGNE_SALARIALE
+Le Bénéficiaire veut transferer ses avoirs PERCO vers un fonds prudent;EPARGNE_SALARIALE
+Participation annuelle absente dans le solde Épargne salariale;EPARGNE_SALARIALE
+Intéressement verse mais non visible dans le compte du Salarié;EPARGNE_SALARIALE
+Versement volontaire refuse sur plan Épargne entreprise;EPARGNE_SALARIALE
+Abondement employeur non calcule après versement du collaborateur;EPARGNE_SALARIALE
+Demande de Déblocage anticipé pour achat residence principale;EPARGNE_SALARIALE
+Choix entre placement participation et paiement immediat;EPARGNE_SALARIALE
+Le Salarié veut consulter la performance des fonds PEE;EPARGNE_SALARIALE
+Arbitrage partiel des avoirs vers fonds dynamique;EPARGNE_SALARIALE
+Erreur sur date de disponibilité des avoirs Salariés;EPARGNE_SALARIALE
+Le PERCO affiche une poche indisponible alors que l Échéance est passée;EPARGNE_SALARIALE
+Mauvais taux d abondement applique sur versement volontaire;EPARGNE_SALARIALE
+Modification du choix de placement Intéressement avant Clôture;EPARGNE_SALARIALE
+Demande de relevé annuel Épargne salariale pour un Bénéficiaire;EPARGNE_SALARIALE
+Fonds entreprise indisponible dans la liste d arbitrage PEE;EPARGNE_SALARIALE
+Blocage sur signature électronique d un Déblocage anticipé;EPARGNE_SALARIALE
+Le Salarié veut regrouper ses avoirs de plusieurs employeurs;EPARGNE_SALARIALE
+Transfert sortant d un PERCO vers autre gestionnaire;EPARGNE_SALARIALE
+Calcul de frais sur arbitrage de fonds Salariés;EPARGNE_SALARIALE
+Versement programme sur PEE non execute a la date prevue;EPARGNE_SALARIALE
+Controle justificatif de Déblocage pour mariage fictif;EPARGNE_SALARIALE
+Le Bénéficiaire souhaite changer la répartition de ses fonds;EPARGNE_SALARIALE
+Anomalie sur nombre de parts d un fonds d Épargne salariale;EPARGNE_SALARIALE
+Operation collective de participation importee avec rejets;EPARGNE_SALARIALE
+Choix par defaut du placement de l Intéressement a verifier;EPARGNE_SALARIALE
+Demande de simulation rendement PEE avant arbitrage;EPARGNE_SALARIALE
+Le Salarié ne retrouve pas son ancien plan entreprise;EPARGNE_SALARIALE
+Erreur de Bénéficiaire sur campagne de versement collectif;EPARGNE_SALARIALE
+Le fonds prudent apparait ferme mais reste sélectionnable;EPARGNE_SALARIALE
+Clôture anticipée d un Dépôt a terme demandée par le client;EPARGNE_BANCAIRE
+Simulation Intérêts DAT avant Échéance contractuelle;EPARGNE_BANCAIRE
+Compte a terme arrivé a Échéance et doit etre renouvelé;EPARGNE_BANCAIRE
+Taux nominal incorrect sur contrat de Dépôt a terme;EPARGNE_BANCAIRE
+Calcul pénalité de sortie anticipée sur DAT;EPARGNE_BANCAIRE
+Capital initial du compte a terme absent de la synthese;EPARGNE_BANCAIRE
+Versement des Intérêts non effectue a la date d Échéance;EPARGNE_BANCAIRE
+Demande de renouvellement automatique d un Dépôt bancaire;EPARGNE_BANCAIRE
+Simulation rendement pour placement a terme sur douze mois;EPARGNE_BANCAIRE
+Erreur arrondi Intérêts cumules sur compte a terme;EPARGNE_BANCAIRE
+Le client veut comparer DAT trois mois et DAT douze mois;EPARGNE_BANCAIRE
+Clôture d un compte a terme avec reversement capital plus Intérêts;EPARGNE_BANCAIRE
+Taux promotionnel non applique sur nouveau Dépôt a terme;EPARGNE_BANCAIRE
+Controle de duree minimale avant ouverture DAT;EPARGNE_BANCAIRE
+Le relevé affiche un Dépôt a terme déjà solde;EPARGNE_BANCAIRE
+Calcul des Intérêts prorata temporis après sortie anticipée;EPARGNE_BANCAIRE
+Creation d un compte a terme refusee car montant minimum non atteint;EPARGNE_BANCAIRE
+Le client demande la fiscalite appliquee aux Intérêts du DAT;EPARGNE_BANCAIRE
+Échéance du Dépôt bancaire decalee après jour ferie;EPARGNE_BANCAIRE
+Blocage sur remboursement capital d un DAT solde;EPARGNE_BANCAIRE
+Changement de taux avant validation du contrat a terme;EPARGNE_BANCAIRE
+Historique des Intérêts versees incomplet pour le compte a terme;EPARGNE_BANCAIRE
+Simulation de placement sécurisé pour trésorerie client;EPARGNE_BANCAIRE
+Le conseiller veut imprimer l attestation de Dépôt a terme;EPARGNE_BANCAIRE
+Anomalie sur renouvellement tacite d un Dépôt bancaire;EPARGNE_BANCAIRE
+Controle du plafond autorisé sur compte a terme;EPARGNE_BANCAIRE
+Demande de rupture anticipée avec calcul de pénalité;EPARGNE_BANCAIRE
+Intérêts attendus differents du tableau d amortissement du DAT;EPARGNE_BANCAIRE
+Le client veut transformer un DAT en nouveau placement a terme;EPARGNE_BANCAIRE
+Ecran de suivi des Échéances DAT sans prochaine date;EPARGNE_BANCAIRE
+Mandat de Mobilité bancaire non reçu par un créancier;MOBILITE_BANCAIRE
+Transfert des prélèvements récurrents vers nouveau RIB;MOBILITE_BANCAIRE
+Dossier Facilit bloqué après changement de banque;MOBILITE_BANCAIRE
+Le client veut suivre la domiciliation de ses virements entrants;MOBILITE_BANCAIRE
+Liste des créanciers a relancer après mandat de Mobilité;MOBILITE_BANCAIRE
+Virement récurrent non transfere vers le nouveau compte;MOBILITE_BANCAIRE
+Prélèvement assurance reste domicilie sur ancien RIB;MOBILITE_BANCAIRE
+Creation dossier Mobilité avec ancien et nouveau compte bancaire;MOBILITE_BANCAIRE
+Le statut du transfert reste en cours depuis plusieurs jours;MOBILITE_BANCAIRE
+Relance automatique d un organisme qui ignore le mandat;MOBILITE_BANCAIRE
+Controle des operations récurrentes avant Clôture ancien compte;MOBILITE_BANCAIRE
+Le client signale un salaire non redirige vers le nouveau RIB;MOBILITE_BANCAIRE
+Facilit doit informer les émetteurs de prélèvements;MOBILITE_BANCAIRE
+Erreur de saisie du nouveau RIB dans un dossier de Mobilité;MOBILITE_BANCAIRE
+Suivi des reponses créanciers après changement de domiciliation;MOBILITE_BANCAIRE
+Transfert partiel des virements permanents a verifier;MOBILITE_BANCAIRE
+Le mandat de Mobilité expire avant retour de tous les organismes;MOBILITE_BANCAIRE
+Blocage sur Clôture de l ancien compte après migration;MOBILITE_BANCAIRE
+Le client veut annuler une demande de Mobilité en cours;MOBILITE_BANCAIRE
+Detection doublon sur deux dossiers Facilit ouverts;MOBILITE_BANCAIRE
+Prélèvement énergie non migre vers le nouveau compte;MOBILITE_BANCAIRE
+Changement banque avec suivi des organismes non répondants;MOBILITE_BANCAIRE
+La banque d arrivée demande le statut du mandat;MOBILITE_BANCAIRE
+Virement loyer permanent encore emis depuis ancien RIB;MOBILITE_BANCAIRE
+Controle cohérence ancien RIB nouveau RIB avant envoi;MOBILITE_BANCAIRE
+Notification client après transfert réussi des operations;MOBILITE_BANCAIRE
+Le dossier reste en erreur car un créancier rejette le mandat;MOBILITE_BANCAIRE
+Tableau de bord Mobilité avec nombre d organismes contactes;MOBILITE_BANCAIRE
+Le client demande quels prélèvements ont déjà bascule;MOBILITE_BANCAIRE
+Reprise d un dossier Mobilité interrompu avant finalisation;MOBILITE_BANCAIRE
+
+
