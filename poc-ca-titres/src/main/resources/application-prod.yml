@@ -1,0 +1,26 @@
+# Profil prod — placeholder POC pédagogique.
+# En production réelle CA, remplacer par les paramètres effectifs :
+#   - DB Oracle / PostgreSQL avec pool HikariCP tuné
+#   - Secrets via Spring Cloud Config ou Vault
+#   - Logging vers ELK / Splunk
+#   - H2 console DESACTIVE
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:h2:mem:poccatitres-prod}
+    username: ${DB_USER:sa}
+    password: ${DB_PASSWORD:}
+  h2:
+    console:
+      enabled: false
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+
+cors:
+  allowed-origins: ${CORS_ALLOWED_ORIGINS:https://placeholder-prod-domain.local}
+
+logging:
+  level:
+    root: WARN
+    fr.formation.poc: INFO

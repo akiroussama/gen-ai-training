@@ -1,0 +1,56 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven 3.9'
+        jdk 'Temurin 17'
+    }
+
+    options {
+        timestamps()
+        timeout(time: 15, unit: 'MINUTES')
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn --batch-mode --no-transfer-progress clean compile'
+            }
+        }
+
+        stage('Tests unitaires') {
+            steps {
+                sh 'mvn --batch-mode --no-transfer-progress test'
+            }
+            post {
+                always {
+                    junit testResults: 'target/surefire-reports/*.xml', allowEmptyResults: true
+                }
+            }
+        }
+
+        stage('Package') {
+            steps {
+                sh 'mvn --batch-mode --no-transfer-progress package -DskipTests'
+            }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'target/*.jar', fingerprint: true, allowEmptyArchive: true
+                }
+            }
+        }
+    }
+
+    post {
+        success { echo 'Build POC Titres OK' }
+        failure { echo 'Build POC Titres ECHEC' }
+    }
+}

@@ -1,0 +1,49 @@
+<h2>Ordres de bourse</h2>
+
+<div class="filtre">
+  <label for="codeClient">Code client :</label>
+  <input id="codeClient" type="text" [(ngModel)]="filtreClient" placeholder="ex : CLI-0001" />
+  <button type="button" (click)="rafraichir()">Rechercher</button>
+</div>
+
+<p *ngIf="chargement()">Chargement…</p>
+<p *ngIf="erreur() as e" class="erreur">{{ e }}</p>
+
+<table *ngIf="!chargement() && ordres().length > 0">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Client</th>
+      <th>ISIN</th>
+      <th>Sens</th>
+      <th>Quantité</th>
+      <th>Cours</th>
+      <th>Statut</th>
+      <th>Frais</th>
+      <th>Date création</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let o of ordres()">
+      <td>{{ o.id }}</td>
+      <td>{{ o.codeClient }}</td>
+      <td>{{ o.codeIsin }}</td>
+      <td>{{ o.sens }}</td>
+      <td>{{ o.quantite }}</td>
+      <td>{{ o.coursLimite | currency:'EUR' }}</td>
+      <td>{{ o.statut }}</td>
+      <td>{{ (o.fraisPercus ?? 0) | currency:'EUR' }}</td>
+      <td>{{ o.dateCreation | date:'short' }}</td>
+      <td>
+        <button type="button"
+                *ngIf="o.statut === 'RECU'"
+                (click)="executer(o)">
+          Exécuter
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p *ngIf="!chargement() && ordres().length === 0 && !erreur()">Aucun ordre trouvé.</p>
